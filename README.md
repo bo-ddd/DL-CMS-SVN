@@ -27,7 +27,9 @@
     ```javascript
     var res = {
       status:[Number]      //登录是否成功 1：成功      0：失败；
-      message:[String]      //返回信息       		   data:'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjQsInVzZXJOYW1lIjoid29vZGZpc2gxIiwicGhvbmVOdW1iZXIiOiIxMjMzNDUiLCJwcmljZSI6MCwidXVpZCI6Ijk2MjQxNTBmLTAwYTUtNDlkNy1hYmRiLWU4ODU1OTEwY2IxYyIsImlhdCI6MTYxNzY5MTU0NywiZXhwIjoxNjE3NjkyMTQ3fQ.KY6HlwgmgdUcMGkkygvv0ue8HZurX292-LlBYsNd_iY'  //jwtSecret
+      message:[String]      //返回信息
+      
+      data:[String jwtToken] 
     }
     ```
 
