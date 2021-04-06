@@ -35,7 +35,6 @@
   ```javascript
   //登录失效
   var res = {
-  	status:401,
 	data:{
 	  status: '9001',
 	  message: 'token验证失败',
@@ -44,9 +43,8 @@
   };
   //未登录
   var res = {
-  	status:401,
 	data:{
-	  status: '9002',
+	  status: '9001',
 	  message: 'token验证失败',
 	  data: false
 	}
