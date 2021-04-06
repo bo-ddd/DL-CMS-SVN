@@ -16,24 +16,20 @@
 2. 描述：  此接口用来进行cms登录；
 
 3. 入参：  
-
+   ```javascript
    var data = { 
-
-   ​	username:[String],
-
-   ​	password:[String]
-
+     username:[String],
+     password:[String]
    }
+   ```
 
-​	4. 出参：
-
-​	var res = {
-
-​		status:[Number]      //登录是否成功 1：成功      0：失败；
-
-​		message:[String]      //返回信息
-
-​	}
+4. 出参：
+```javascript
+  var res = {
+    status:[Number]      //登录是否成功 1：成功      0：失败；
+    message:[String]      //返回信息
+  }
+```
 
 
 
