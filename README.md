@@ -31,7 +31,27 @@
       data:[String jwtToken] 
     }
     ```
-
+5. 登录失效和未登录
+  ```javascript
+  //登录失效
+  var res = {
+  	status:401,
+	data:{
+	  status: '9001',
+	  message: 'token验证失败',
+	  data: false
+	}
+  };
+  //未登录
+  var res = {
+  	status:401,
+	data:{
+	  status: '9002',
+	  message: 'token验证失败',
+	  data: false
+	}
+  };
+  ```
 
 
 #### 获取用户信息接口
