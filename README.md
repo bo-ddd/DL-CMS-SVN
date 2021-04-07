@@ -80,5 +80,44 @@
    }
    ```
 
+5. 获取订单列表
+  1. 接口名称：/order/list
+  2. 描述：获取订单列表
+  3. 接口入参：
+  ```javascript
+  var request = {
+    pageNum:1, //[Number]当前第几页
+    pageSize: 20  //[Number] 每页展示多少条数据,非必填项，如不传，会默认展示20条 
+  }
+  ```
+  4. 接口出参：
+  ```javascript
+  var res = {
+    "count": 2,  //数据总条数
+    "rows": [
+        {
+            "orderId": 1,   //
+            "phoneNumber": "13333333333",
+            "orderType": 1,  //1:话费  2：流量
+            "packageType": 1,  // 1代表1元套餐，x代表 x元套餐
+            "price": 1,   //实付价格
+            "orderStatus": 1,  // 1:已完成  0:待审核
+            "createdAt": "2021-04-07T11:24:16.000Z", //订单生成时间
+            "updatedAt": null  //订单修改时间
+        },
+        {
+            "orderId": 2,
+            "phoneNumber": "13444444444",
+            "orderType": 1,
+            "packageType": 1,
+            "price": 1,
+            "orderStatus": 1,
+            "createdAt": "2021-04-07T11:54:36.000Z",
+            "updatedAt": null
+        }
+    ]
+}
+  ```
+
    
 
