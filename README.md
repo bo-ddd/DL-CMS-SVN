@@ -87,13 +87,16 @@
   ```javascript
   var request = {
     pageNum:1, //[Number]当前第几页
-    pageSize: 20  //[Number] 每页展示多少条数据,非必填项，如不传，会默认展示20条 
+    pageSize: 20,  //[Number] 每页展示多少条数据,非必填项，如不传，会默认展示20条
+    orderId:"",  //非必填
+    phoneNumber:''  // 非必填 手机号
   }
   ```
   4. 接口出参：
   ```javascript
   var res = {
     "count": 2,  //数据总条数
+    "countPage":5  //总页数
     "rows": [
         {
             "orderId": 1,   //
