@@ -121,6 +121,25 @@
     ]
 }
   ```
+6. 注册账号
+  1. 接口名称： /user/create
+  2. 描述：注册账号接口
+  3. 接口入参：
+  ```javascript
+  var request = {
+    username:'woodfish', //[String]用户名，最少6位
+    password: 999999;,  //[String] 用户名密码 最少6位
+    phoneNumber:''  //[String]手机号
+  }
+  ```
+  4. 接口出参：
+  ```javascript 
+  var res = {
+    code:1,  //1成功  0：失败
+    message:'success',  //提示信息
+    data:result
+  }
+  ```
 
    
 
