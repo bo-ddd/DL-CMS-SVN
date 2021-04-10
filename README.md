@@ -140,6 +140,24 @@
     data:result
   }
   ```
+  
+7. 创建订单接口
+  1. 接口名称： /order/create
+  2. 描述：创建订单接口
+  3. 接口入参：
+  ```javascript
+  var request = {
+    packageType:1, //[String]1：1元套餐，  2：2元套餐  3：3元套餐；
+    phoneNumbers:[]  //[Array]手机号的集合
+  }
+  ```
+  4. 接口出参：
+  ```javascript 
+  var res = {
+    status:1,
+    message:'订单生成中....'
+    }
+  ```
 
    
 
