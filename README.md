@@ -239,3 +239,21 @@
   3. 接口方式： 'GET'
   4. 接口入参： 无
   5. 接口出参：图片
+ 
+ ### 校验图形验证码
+  1. 接口名称： /user/checkCaptcha
+  2. 描述： 适用于用户登录注册时的验证码， 失效时间60秒
+  3. 接口入参：
+  ```javascript
+  var request = {
+    captcha:'' //[String]4位字符
+  }
+  ```
+  4. 接口出参：
+  ```javascript 
+  var res = {
+    status:1,  //1:成功  0：失败
+    message:'success',  //success  0:验证失败
+    data:null
+  }
+  ``` 
