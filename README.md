@@ -158,5 +158,43 @@
     }
   ``` 
 
+### 获取用户列表接口
+  1. 接口名称：/user/list
+  2. 描述：获取用户列表,此接口需要有管理员权限
+  3. 接口入参：
+  ```javascript
+  var request = {
+    pageNum:1, //[Number]当前第几页
+    pageSize: 20,  //[Number] 每页展示多少条数据,非必填项，如不传，会默认展示20条
+    userId:"",  //非必填
+    phoneNumber:''  // 非必填 手机号
+  }
+  ```
+  4. 接口出参：
+  ```javascript
+  var res = {
+    "count": 2,  //数据总条数
+    "countPage":5  //总页数
+    "rows": [
+        {
+            "userId": 1,   //
+            "phoneNumber": "13333333333",
+            "price": 1,   //账户余额
+	    "identity":1   //  1:管理员  2：普通商户
+            "createdAt": null, //用户创建时间
+            "updatedAt": null  //修改用户信息时间
+        },
+        {
+            "userId": 2,   //
+            "phoneNumber": "13333333333",
+            "price": 1,   //账户余额
+	    "identity":1   //  1:管理员  2：普通商户
+            "createdAt": null, //用户创建时间
+            "updatedAt": null  //修改用户信息时间
+        }
+    ]
+}
+  ```
+
    
 
