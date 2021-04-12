@@ -180,7 +180,7 @@
             "userId": 1,   //
             "phoneNumber": "13333333333",
             "price": 1,   //账户余额
-	    "identity":1   //  1:管理员  2：普通商户
+	    "identity":1   //  1:管理员  0：普通商户
             "createdAt": null, //用户创建时间
             "updatedAt": null  //修改用户信息时间
         },
@@ -188,7 +188,7 @@
             "userId": 2,   //
             "phoneNumber": "13333333333",
             "price": 1,   //账户余额
-	    "identity":1   //  1:管理员  2：普通商户
+	    "identity":1   //  1:管理员  0：普通商户
             "createdAt": null, //用户创建时间
             "updatedAt": null  //修改用户信息时间
         }
@@ -210,8 +210,27 @@
   4. 接口出参：
   ```javascript 
   var res = {
-    code:0,
+    status:1,  //1成功  0失败
     message:'信息修改成功',
+    data:null
+  }
+  ``` 
+  
+  ### 充值余额接口
+  1. 接口名称： /user/bill
+  2. 描述： 适用于管理员给用户充值按钮；
+  3. 接口入参：
+  ```javascript
+  var request = {
+    userId:'',
+    price:'', //[String]用户总价格；
+  }
+  ```
+  4. 接口出参：
+  ```javascript 
+  var res = {
+    status:1,  //1:成功  0：失败
+    message:'充值成功！',
     data:null
   }
   ``` 
