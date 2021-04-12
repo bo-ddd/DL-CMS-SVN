@@ -195,6 +195,26 @@
     ]
 }
   ```
+  ### 修改用户信息接口
+  1. 接口名称： /user/update
+  2. 描述： 适用于用户中心修改用户信息接口
+  3. 接口入参：
+  ```javascript
+  var request = {
+    userId:'',
+    userName:'', //[String]用户名；
+    phoneNumber:'', //[String]手机号
+    password:''
+  }
+  ```
+  4. 接口出参：
+  ```javascript 
+  var res = {
+    code:0,
+    message:'信息修改成功',
+    data:null
+  }
+  ``` 
 
    
 
