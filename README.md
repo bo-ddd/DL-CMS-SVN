@@ -11,7 +11,7 @@
 
 #### 登录接口定义
 
-1. 接口名： /user/signin ;
+1. 接口名： /user/signin;
 
 2. 描述：  此接口用来进行cms登录；
 
@@ -19,7 +19,9 @@
    ```javascript
    var data = { 
      username:[String],
-     password:[String]
+     password:[String],
+     captcha:'',  //[String]图形验证码,非必填项
+     version:'V1.0'  //[String]非必填项，如果传 V1.0,需要加图形验证码参数
    }
    ```
 
