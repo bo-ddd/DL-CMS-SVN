@@ -201,8 +201,6 @@
   3. 接口入参：
   ```javascript
   var request = {
-    userId:'',
-    userName:'', //[String]用户名；
     phoneNumber:'', //[String]手机号
     password:''
   }
