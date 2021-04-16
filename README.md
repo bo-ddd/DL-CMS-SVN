@@ -266,7 +266,6 @@
   3. 接口入参：
   ```javascript
   var request = {
-    captcha:'' //[String]4位字符
     userName,//充值的用户名
     uuid,  //充值的uuid;
     price：''   //[Number]充值后的余额；
@@ -275,4 +274,34 @@
   4. 接口出参：
   ```javascript 
   var res = {}  该接口是直接调用，不需要做任何处理；
+  ``` 
+  
+  ### 充值日志列表
+  1. 接口名称： /log/bill
+  2. 描述： 用户充值后增加充值记录；
+  3. 接口入参：
+  ```javascript
+  var request = {
+    pageNum:1, //[Number]当前第几页
+    pageSize: 20,  //[Number] 每页展示多少条数据,非必填项，如不传，会默认展示20条
+    userName:"",  //非必填
+    uuid:''  // 非必填 用户uuid;
+  }
+  ```
+  4. 接口出参：
+  ```javascript
+  var res = {
+    "count": 2,  //数据总条数
+    "countPage":5  //总页数
+    "rows": [
+        {
+            "id": 1,   //
+            "uuid": "13333333333",
+            "price": 1,   //实付价格
+            "createdAt": "2021-04-07T11:24:16.000Z", //订单生成时间
+            "updatedAt": null  //订单修改时间
+        }
+    ]
+}
+  ```
   ``` 
