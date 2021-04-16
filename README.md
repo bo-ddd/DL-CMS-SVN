@@ -259,3 +259,20 @@
     data:null
   }
   ``` 
+ 
+ ### 增加充值日志
+  1. 接口名称： /log/bill
+  2. 描述： 用户充值后增加充值记录；
+  3. 接口入参：
+  ```javascript
+  var request = {
+    captcha:'' //[String]4位字符
+    userName,//充值的用户名
+    uuid,  //充值的uuid;
+    price：''   //[Number]充值后的余额；
+  }
+  ```
+  4. 接口出参：
+  ```javascript 
+  var res = {}  该接口是直接调用，不需要做任何处理；
+  ``` 
