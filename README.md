@@ -155,8 +155,8 @@
   4. 接口出参：
   ```javascript 
   var res = {
-    status:1,
-    message:'订单生成中....'
+    status:1,  // 1成功   4:余额不足
+    message:'订单生成中....' 
     }
   ``` 
 
