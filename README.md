@@ -304,4 +304,18 @@
     ]
 }
   ```
-  ``` 
+  
+  ### 审核订单
+  1. 接口名称： /order/examine
+  2. 描述： 审核订单接口；
+  3. 接口入参：
+  ```javascript
+  var request = {
+    orderId:''   //【string】 订单id
+  }
+  ```
+  4. 接口出参：
+  ```javascript
+  var res = {}
+  ```
+
