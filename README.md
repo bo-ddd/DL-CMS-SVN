@@ -305,17 +305,34 @@
 }
   ```
   
-  ### 审核订单
-  1. 接口名称： /order/examine
-  2. 描述： 审核订单接口；
+  ### 套餐列表
+  1. 接口名称： /package/list
+  2. 描述： 获取套餐列表；
+  3. 接口入参：
+  ```javascript
+  var request = {}
+  ```
+  4. 接口出参：
+  ```javascript
+  var res = {
+  }
+  ```
+  
+    ### 修改套餐价格
+  1. 接口名称： /package/update
+  2. 描述： 获取套餐列表；
   3. 接口入参：
   ```javascript
   var request = {
-    orderId:''   //【string】 订单id
+    price:''
   }
   ```
   4. 接口出参：
   ```javascript
-  var res = {}
+  var res = {
+     status:1,
+     data:null,
+     message:'套餐修改成功'
+  }
   ```
 
